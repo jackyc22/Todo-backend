@@ -1,0 +1,9 @@
+npm install express
+npm install body-parser
+npm install sqlite3
+
+untuk menjalankan vite harus menuju folder front-end
+dan tulislah perintah npm run dev
+
+install axios pada frond-end untuk dapat melakukan interaksi dengan backend
+npm install axios
