@@ -7,3 +7,10 @@ dan tulislah perintah npm run dev
 
 install axios pada frond-end untuk dapat melakukan interaksi dengan backend
 npm install axios
+
+-- install front end vite
+npm init @vitejs/app todo-frontend-- --template vue
+-- selanjutnya pada folder todo-frontend dilakukan
+npm install 
+-- dan untuk menjalankannya dapat menjalankan perintah
+npm run dev
