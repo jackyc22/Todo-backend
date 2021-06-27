@@ -47,8 +47,10 @@ router.delete('/:id',auth,(req,res,next)=>{
     const password=req.headers.password
     const id= String(req.params.id)
     const idUser=db.get('SELECT ID FROM USERS WHERE (username=? AND password=?)',username,password,(err,row)=>{
-        if(row.ID==id)
+        if(row.ID==id){
             res.send(401)
+        }
+            
         else
             next()
     })

@@ -1,7 +1,6 @@
 const express= require('express')
-const cors= require('cors')
+const cors= require('cors')//digunakan untuk menghubungkan ke frontend
 const bodyparser=require('body-parser')
-
 const app= express()
 
 const auth= require('./middlewares/auth.js')
@@ -11,6 +10,7 @@ const routerUser= require('./router/user.js')
 const routerTodo= require('./router/todo.js')
 
 app.use(cors())
+
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json())
 
